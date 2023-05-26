@@ -1,83 +1,132 @@
-body{text-align: center;}
+body{
+	font-family: Arial;
+	text-align: center;
+	align-items: center;
+	background-color: #ddd;
+	}
 
-ul{text-align: left;}
+ul{text-align: center;}
 
-h1{color: red; font-family: Arial}
-h2{color: blue; font-family: Arial}
+h2{color: black;font-family: Arial}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{ text-decoration:none; }
+
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	padding: 20px;
+
+}
+
+.logo_title, .navbar ul	li a {color: #fff}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+}
+
+.navbar ul li a {
+	padding: 12px;
+	margin: 0 6px;
+}
+
+.navbar ul li a:hover {
+	color: black;
+	background-color: beige;
+}
+
+
+
+
+.images{
+	display: flex;
+	align-items: center;
+	justify-content: space between;
+	animation-duration: 20s;
+	animation-name: mesImages;
+	animation-iteration-count: infinite;
+}
+
+#caroussel {
+	width: 1200px;
+	overflow: scroll;
+	margin: 35px;
+	border: 2px solid #333;	
+	}
+
+
+@keyframes mesImages {
+	0% {
+		transform: translateX(0);
+	}
+	25%{
+		transform: translateX(-1200px);
+	}
+	50%{
+		transform: translateX(-2400px);
+	}
+	75%{
+		transform: translateX(-3600px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
 
 
 .frame {
-
-background: green;
-border: dashed 10px #9BA4B5;
-border-radius : 100px;
-margin: 30px;
-box-shadow:10px 10px 10px pink;
-
+	border: 3px solid #333;
+	border-radius: 100px;
+	margin: 50px;
+	padding: 30px;
+	justify-content: center;
 }
 
 .frame2 {
-background: white;
-border: dashed 10px ;
-border-radius : 100px;
-margin: 30px;
-box-shadow:10px 10px 10px pink;
-      }
+	display: flex;
+	justify-content: space-around;
+	border-radius: 100px;
+	border: 3px solid #333;
+	padding: 40px;
+	margin: 50px;
+	align-items: center;
+	box-shadow: black;
+}
 
-
-.avatar {
-width: 750px;
-height: 750px;
-border-radius: 50%;
-object-fit: cover;
-box-shadow: 10px 10px 10px grey;
+.logo{
+	border-radius: 100px;
 }
 
 
-.galery {
-display: flex;
-justify-content: space-around;
-height: 300px;
-align-items: center;
+.maps{
+	display: flex;
+	justify-content: space around;
+	align-items: center;
+	margin: 50px;
 }
 
-.maps {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+.resto{
+	margin: 30px;
+	vertical-align: space around;
 }
 
-
-.my-navbar {
-      background-color: darkred;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: black;
 }
 
-
-.logo {
-      border-radius: 50%;
-      height: 150px;
-      width: 150px;
-      object-fit: cover;
-      margin-left: 30px;
+.countries {
+	display: flex;
+	justify-content: space-between;
 }
-
-.links {
-      margin-right: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

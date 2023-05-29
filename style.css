@@ -1,5 +1,5 @@
 body{
-	font-family: Arial;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	align-items: center;
 	background-color: #ddd;
@@ -7,7 +7,7 @@ body{
 
 ul{text-align: center;}
 
-h2{color: black;font-family: Arial}
+h2 h3{color: black;font-family: Arial}
 
 * {
 	margin: 0;
@@ -18,7 +18,7 @@ h2{color: black;font-family: Arial}
 a{ text-decoration:none; }
 
 
-.navbar {
+.my-navbar {
 	display: flex;
 	justify-content: space-between;
 	background-color: black;
@@ -26,20 +26,20 @@ a{ text-decoration:none; }
 
 }
 
-.logo_title, .navbar ul	li a {color: #fff}
+.logo_title, .my-navbar ul	li a {color: #fff}
 
-.navbar ul {
+.my-navbar ul {
 	display: flex;
 	align-items: center;
 	list-style-type: none;
 }
 
-.navbar ul li a {
+.my-navbar ul li a {
 	padding: 12px;
 	margin: 0 6px;
 }
 
-.navbar ul li a:hover {
+.my-navbar ul li a:hover {
 	color: black;
 	background-color: beige;
 }
@@ -85,21 +85,23 @@ a{ text-decoration:none; }
 
 .frame {
 	border: 3px solid #333;
-	border-radius: 100px;
+	border-radius: 5px;
 	margin: 50px;
 	padding: 30px;
 	justify-content: center;
+	box-shadow: 10px 10px 10px grey;
+
 }
 
 .frame2 {
 	display: flex;
-	justify-content: space-around;
-	border-radius: 100px;
+	justify-content: space-between;
+	border-radius: 5px;
 	border: 3px solid #333;
 	padding: 40px;
-	margin: 50px;
+	margin: 60px;
 	align-items: center;
-	box-shadow: black;
+	box-shadow: 10px 10px 10px grey;
 }
 
 .logo{
@@ -119,14 +121,42 @@ a{ text-decoration:none; }
 	vertical-align: space around;
 }
 
-.footer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: black;
-}
-
-.countries {
+.footers {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: #ddd;
+	padding: 20px;
+
 }
+
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+
